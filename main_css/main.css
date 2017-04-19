@@ -42,7 +42,7 @@ header{
 }
 h1{
   float: left;
-  font: 2em/1.6 Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font: 2em/2 Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
 }
 button {
   display: block;
@@ -55,6 +55,7 @@ button {
   border-radius: 3px;
   cursor: pointer;
   transition: .3s background;
+  margin: 1em 1em 0;
 }
 button:hover {
   background: rgba(0,0,0,0.5);
@@ -70,12 +71,15 @@ nav li>a {
   padding: 0 2em;
   font: 1.2em/2 Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
   background: rgba(0,0,0,0.3);
+  border-radius: 5px;
   color: white;
   margin-right: 2em;
 }
-
-
-
+nav li>a:hover,
+nav li>a:focus,
+nav li>a:visited {
+  background: rgba(0,0,0,0.5);
+}
 
 /*a {
   display: inline-block;
