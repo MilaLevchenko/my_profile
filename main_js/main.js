@@ -1,5 +1,35 @@
+
+
+
+
+$(document).ready(function () {
+  var trigger = $('.hamburger'),
+      isClosed = false;
+
+  trigger.click(function () {
+    hamburger_cross();
+  });
+
+  function hamburger_cross() {
+
+    if (isClosed == true) {
+      trigger.removeClass('is-open');
+      trigger.addClass('is-closed');
+      isClosed = false;
+    } else {
+      trigger.removeClass('is-closed');
+      trigger.addClass('is-open');
+      isClosed = true;
+    }
+  }
+
+  $('[data-toggle="offcanvas"]').click(function () {
+    $('#sidebar-wrapper').toggleClass('toggled');
+  });
+});
+
 var vid = document.getElementById("bgvid");
-var pauseButton = document.querySelector(".me button");
+var pauseButton = document.querySelector(".pause_content button");
 
 if (window.matchMedia('(prefers-reduced-motion)').matches) {
   vid.removeAttribute("autoplay");
@@ -29,5 +59,4 @@ pauseButton.addEventListener("click", function() {
     vid.pause();
     pauseButton.innerHTML = "Paused";
   }
-})
-
+});
