@@ -1,9 +1,6 @@
-
-
-
-
 $(document).ready(function () {
-  var trigger = $('.hamburger'),
+  var trigger = $('.hamburger');
+  var pauseContent = $('.pause_content button');
       isClosed = false;
 
   trigger.click(function () {
@@ -15,10 +12,14 @@ $(document).ready(function () {
     if (isClosed == true) {
       trigger.removeClass('is-open');
       trigger.addClass('is-closed');
+      pauseContent.removeClass('trigger_is_open');
+      pauseContent.addClass('trigger_is_closed');
       isClosed = false;
     } else {
       trigger.removeClass('is-closed');
       trigger.addClass('is-open');
+      pauseContent.removeClass('trigger_is_closed');
+      pauseContent.addClass('trigger_is_open');
       isClosed = true;
     }
   }

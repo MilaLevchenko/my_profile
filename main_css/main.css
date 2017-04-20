@@ -285,3 +285,28 @@ video {
   -webkit-transform: translate3d(-100px,0,0);
   -webkit-transition: all .35s ease-in-out;
 }
+
+.pause_content button {
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  width: 7em;
+  padding: .6rem;
+  border: none;
+  font-size: 1.3rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s background;
+}
+
+.pause_content button:hover {
+  border: none;
+  background: rgba(0,0,0,0.7);
+}
+
+.pause_content button.trigger_is_open {
+  left: 245px;
+}
