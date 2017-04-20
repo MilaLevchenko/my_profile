@@ -113,7 +113,8 @@ video {
 .sidebar-nav li:nth-child(5):before {
   background-color: #279636;
 }
-.sidebar-nav li:nth-child(6):before {
+.sidebar-nav li:nth-child(6):before,
+.sidebar-nav .dropdown-menu li:first-child:before {
   background-color: #7d5d81;
 }
 .sidebar-nav li:nth-child(7):before {
@@ -139,6 +140,7 @@ video {
   display: block;
   color: #ddd;
   text-decoration: none;
+  background-color: #222;
   padding: 10px 15px 10px 30px;
 }
 
@@ -167,6 +169,14 @@ video {
   border: none;
   background-color: #222;
   box-shadow: none;
+}
+.sidebar-nav .dropdown-menu li a:hover,
+.sidebar-nav .dropdown-menu li a:active,
+.sidebar-nav .dropdown-menu li a:focus {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  background-image: none;
 }
 
 /*-------------------------------*/
